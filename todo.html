@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="todo.css" rel="stylesheet"/>
+    <title>Todo-list</title>
+</head>
+<body>
+    <h1>Todo-list</h1>
+    <h1 class="time"></h1>
+    <section class="todo">
+        <div class="todo__what">
+            <h2>What to do?</h2>
+            <input onkeyup="enterkey();" class="what__input" type="text" placeholder="오늘 할 일을 입력하세요!">
+            <ul class="what__list">
+
+            </ul>
+        </div>
+        <div class="todo__done">
+            <h2>Done</h2>
+            <ul class="done__list">
+
+            </ul>
+        </div>
+    </section>
+    <div class="hidden">
+        <i class="fas fa-check-circle check-icon"></i>
+        <i class="fas fa-pen-square pen-icon"></i>
+    </div>
+    <script src="todo.js" defer></script>
+    <script src="https://kit.fontawesome.com/bf68350e45.js" crossorigin="anonymous"></script>
+</body>
+</html>

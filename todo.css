@@ -1,0 +1,63 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+h1 {
+  text-align: center;
+  font-size: 60px;
+}
+.todo {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.todo__what,
+.todo__done {
+  border: 1px solid black;
+  width: 300px;
+  height: 500px;
+  text-align: center;
+  border-radius: 30px;
+}
+.todo__what input {
+  width: 200px;
+  height: 25px;
+  font-size: 15px;
+  border-radius: 15px;
+  padding-left: 5px;
+}
+.todo__what input:focus {
+  outline: none;
+  border: none;
+}
+li {
+  user-select: none;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-align: left;
+  font-size: 20px;
+  width: 200px;
+  list-style-type: disc;
+}
+li:hover {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+li:hover i {
+  opacity: 0.3;
+}
+i {
+  opacity: 0;
+  float: right;
+  margin-left: 5px;
+}
+.hidden {
+  display: none;
+}
+.input_list {
+  border: none;
+  width: 100px;
+}
+.input_list:focus {
+  outline: none;
+}
